@@ -1,47 +1,58 @@
+# encoding: utf-8
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
+gem 'faker'
+gem 'coderay'
+gem 'haml'
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'puma'
+gem 'test-unit'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'wice_grid', '3.6.0'
+# gem 'wice_grid',  path: 'vendor/wice_grid'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+gem 'font-awesome-sass',  '~> 4.3'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'jquery-ui-themes'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+gem 'protected_attributes'
+
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+gem 'bootstrap-sass', '3.1.1.1'
+gem 'sass-rails', '>= 3.2'
+gem 'sprockets', '2.11.0' # http://stackoverflow.com/questions/22392862/undefined-method-environment-for-nilnilclass-when-importing-bootstrap
+
+gem 'coffee-rails'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+gem 'therubyracer', platforms: :ruby
+
+gem 'uglifier', '>= 1.0.3'
+
+#group :production, :postgres do
+#  gem 'pg'
+#end
+#gem 'mysql2', '~>0.3.13'
+gem 'sqlite3'
+group :development do
+  gem 'quiet_assets'
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+group :test, :development do
+  gem 'rspec-rails', '~> 2.13.0'
+  # gem 'capybara' , '1.1.2'
+#  gem 'capybara', '~> 2.1.0'
+  gem 'selenium-webdriver'
+  gem 'poltergeist'
+end
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+group :test do
+  gem 'shoulda-matchers'
+  gem 'capybara-screenshot'
 end
 
