@@ -1,4 +1,4 @@
-<%= grid(@agreement_grid, show_filters: :always) do |g|
+<%= grid(@agreement_grid) do |g|
 
   g.column name:  'ID', attribute: 'id'
 
@@ -11,4 +11,4 @@
   g.column   do |agreement|
     link_to('Edit', edit_agreement_path(agreement))
   end
-end -%>
+end %>

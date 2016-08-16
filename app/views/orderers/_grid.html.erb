@@ -1,4 +1,4 @@
-<%= grid(@orderer_grid, show_filters: :always) do |g|
+<%= grid(@orderer_grid) do |g|
 
   g.column name:  'ID', attribute: 'id'
 
@@ -9,4 +9,4 @@
   g.column   do |orderer|
     link_to('Edit', edit_orderer_path(orderer))
   end
-end -%>
+end %>
