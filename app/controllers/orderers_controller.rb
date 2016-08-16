@@ -3,7 +3,7 @@ class OrderersController < ApplicationController
 
   # GET /orderers
   def index
-    @orderers = Orderer.all
+    @orderers_grid = initialize_grid(Orderer)
   end
 
   # GET /orderers/1

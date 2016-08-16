@@ -1,0 +1,14 @@
+<%= grid(@agreement_grid, show_filters: :always) do |g|
+
+  g.column name:  'ID', attribute: 'id'
+
+  g.column name:  '名前', attribute: 'name'
+
+  g.column name: 'Orderer',attribute: 'name',assoc: :orderer do |agreement| 
+  	agreement.orderer.name
+  end
+
+  g.column   do |agreement|
+    link_to('Edit', edit_agreement_path(agreement))
+  end
+end -%>

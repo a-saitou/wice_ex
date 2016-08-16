@@ -3,13 +3,44 @@
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
- */
+ *= require_tree .
+ *= require jquery-ui/humanity
+*/
+
+@import "bootstrap";
+@import "wice_grid";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+body {padding-top: 20px;}
+header{padding-bottom: 20px;}
+header h1{font-size: 48px;}
+
+.well h2 {margin-bottom: 20px;}
+
+.external-buttons {margin-bottom: 20px;}
+
+input.range-start, input.range-end{width: 100px;}
+
+header h1 {float: left; margin-left: 20px;}
+header .example-navigator {float: right; margin-right: 120px}
+li.next {margin-left: 10px;}
+.clear {clear:both;}
+
+.wice-grid.table-striped tbody tr:nth-child(odd) td.active-filter {
+  background-color: #f9f9e9;
+}
+
+.wice-grid.table-striped tbody tr td.active-filter {
+  background-color: #f9f9e9;
+}
+
+footer .sources {float: right;}

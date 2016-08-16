@@ -1,0 +1,12 @@
+<%= grid(@orderer_grid, show_filters: :always) do |g|
+
+  g.column name:  'ID', attribute: 'id'
+
+  g.column name:  '名前', attribute: 'name'
+
+  end
+
+  g.column   do |orderer|
+    link_to('Edit', edit_orderer_path(orderer))
+  end
+end -%>
