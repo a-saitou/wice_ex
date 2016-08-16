@@ -4,10 +4,8 @@
 
   g.column name:  '名前', attribute: 'name'
 
-  end
-
   g.column   do |orderer|
     link_to('Edit', edit_orderer_path(orderer))
   end
-end 
+end
 %>
