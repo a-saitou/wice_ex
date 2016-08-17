@@ -1,11 +1,11 @@
 <%= grid(@agreements_grid) do |g|
 
-  g.column name:  'ID' do |g|
+  g.column name:  'ID' do |agreement|
   	ageement.ID
   end
 
-  g.column name:  '名前' do |g|
-  	agreemrnt.name
+  g.column name:  '名前' do |agreement|
+  	agreement.name
   end
 
   g.column name: 'Orderer',attribute: 'name',assoc: :orderer do |agreement| 

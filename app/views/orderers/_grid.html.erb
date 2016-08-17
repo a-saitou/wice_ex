@@ -1,10 +1,10 @@
-<%= grid(@orderers_grid) do |g|
+<%= grid(@orderers_grid) do |orderer|
 
-  g.column name:  'ID' do |g|
+  g.column name:  'ID' do |orderer|
     orderer.id
   end
 
-  g.column name:  '名前' do |g|
+  g.column name:  '名前' do |orderer|
   	orderer.name
   end
 
