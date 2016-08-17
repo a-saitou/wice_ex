@@ -1,8 +1,12 @@
 <%= grid(@orderers_grid) do |g|
 
-  g.column name:  'ID', attribute: 'id'
+  g.column name:  'ID' do |g|
+    orderer.id
+  end
 
-  g.column name:  '名前', attribute: 'name'
+  g.column name:  '名前' do |g|
+  	orderer.name
+  end
 
   g.column   do |orderer|
     link_to('Edit', edit_orderer_path(orderer))
