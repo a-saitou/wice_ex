@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :works
+  resources :calendars
+  resources :staffs
   resources :agreements
   resources :orderers
     Wice.define_routes(self, 'queries')
