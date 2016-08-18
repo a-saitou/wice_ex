@@ -7,7 +7,7 @@ class CreateStaffs < ActiveRecord::Migration
       t.decimal :wage
       t.date :birthday
       t.date :hire_date
-      t.date :leacing_date
+      t.date :leaving_date
 
       t.timestamps null: false
     end

@@ -7,7 +7,7 @@ class CreateWorks < ActiveRecord::Migration
       t.time :start_time
       t.time :end_time
       t.integer :work_time
-      t.integer :over_work_time
+      t.integer :over_time
       t.integer :late_night_over_time
       t.integer :paid_holiday
       t.integer :agency_holiday
