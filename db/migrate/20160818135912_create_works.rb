@@ -3,7 +3,6 @@ class CreateWorks < ActiveRecord::Migration
     create_table :works do |t|
       t.integer :calendar_id
       t.string :staff_id
-      t.integer :
       t.integer :agreement_id
       t.time :start_time
       t.time :end_time
