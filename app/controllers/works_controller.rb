@@ -3,7 +3,8 @@ class WorksController < ApplicationController
 
   # GET /works
   def index
-    @works = Work.all
+    @w_grid = initialize_grid(Work,
+      include: [:staff,:agreement,:calendar])
   end
 
   # GET /works/1

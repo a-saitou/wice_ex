@@ -8,7 +8,7 @@
   	agreement.name
   end
 
-  g.column name: 'Orderer',attribute: 'name',assoc: :orderer do |agreement| 
+  g.column name: '発注元',assoc: :orderer do |agreement| 
   	agreement.orderer.name
   end
 
