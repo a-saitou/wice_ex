@@ -3,7 +3,7 @@ class StaffsController < ApplicationController
 
   # GET /staffs
   def index
-    @_grid = initialize_grid(Staff)
+    @staffs_grid = initialize_grid(Staff)
   end
 
   # GET /staffs/1

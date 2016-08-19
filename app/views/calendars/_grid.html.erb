@@ -1,33 +1,33 @@
-<%= grid(@agreements_grid) do |g|
+<%= grid(@calendars_grid) do |g|
 
-  g.column name:  'ID' do |agreement|
-  	agreement.id
+  g.column name:  'ID' do |calendar|
+  	calendar.id
   end
 
-  g.column name:  '日付' do |agreement|
-  	agreement.hiduke
+  g.column name:  '日付' do |calendar|
+  	calendar.hiduke
   end
 
-  g.column name:  '年' do |agreement|
-    agreement.year
+  g.column name:  '年' do |calendar|
+    calendar.year
   end
 
-  g.column name:  '月' do |agreement|
-    agreement.month
+  g.column name:  '月' do |calendar|
+    calendar.month
   end
 
-  g.column name:  '日' do |agreement|
-    agreement.day
+  g.column name:  '日' do |calendar|
+    calendar.day
   end
 
-  g.column name:  '休日' do |agreement|
-    agreement.holiday
+  g.column name:  '休日' do |calendar|
+    calendar.holiday
   end
 
 
 
-  g.column   do |agreement|
-    link_to('Edit', edit_agreement_path(agreement))
+  g.column   do |calendar|
+    link_to('Edit', edit_calendar_path(calendar))
   end
 end 
 %>
