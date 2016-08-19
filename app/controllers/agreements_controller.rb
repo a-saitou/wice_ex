@@ -9,6 +9,7 @@ class AgreementsController < ApplicationController
 
   # GET /agreements/1
   def show
+    @orderers=Orderer.all
   end
 
   # GET /agreements/new
@@ -18,12 +19,13 @@ class AgreementsController < ApplicationController
 
   # GET /agreements/1/edit
   def edit
+     @orderers=Orderer.all
   end
 
   # POST /agreements
   def create
     @agreement = Agreement.new(agreement_params)
-
+    @orderers=Orderer.all
     if @agreement.save
       redirect_to @agreement, notice: 'Agreement was successfully created.'
     else
