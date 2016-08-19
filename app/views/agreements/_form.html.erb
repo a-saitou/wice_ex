@@ -27,8 +27,10 @@
   </div>
 
  <div class="field">
+<%= form_for @agreement do |f| %>
   <%= f.label :orderer_id %>
-  <%= f.select :orderer_id, @orderers %>
+  <%= f.collection_select :orderer_id, Orderer.all, :id, :name %>
+<% end %>
 </div>
 
   <div class="field">

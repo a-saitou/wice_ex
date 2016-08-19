@@ -1,6 +1,6 @@
 class AgreementsController < ApplicationController
   before_action :set_agreement, only: [:show, :edit, :update, :destroy]
-  before_action :set_orderers, only: [:show, :edit, :update, :destroy]
+ 
   # GET /agreements
   def index
     @agreements_grid = initialize_grid(Agreement,
@@ -51,9 +51,7 @@ class AgreementsController < ApplicationController
     def set_agreement
       @agreement = Agreement.find(params[:id])
     end
-  def set_orderers
-    @ooderers = Orderer.all.pluck(:name,:id)
-  end
+
     # Only allow a trusted parameter "white list" through.
     def agreement_params
       params.require(:agreement).permit(:name,:abbreviation,:code, :orderer_id,:constraction_date,:completion_date)
