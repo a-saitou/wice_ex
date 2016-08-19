@@ -9,17 +9,17 @@ class AgreementsController < ApplicationController
 
   # GET /agreements/1
   def show
-    @orderers=Orderer.all
+
   end
 
   # GET /agreements/new
   def new
-    @agreement = Agreement.new
+
   end
 
   # GET /agreements/1/edit
   def edit
-     @orderers=Orderer.all
+
   end
 
   # POST /agreements
