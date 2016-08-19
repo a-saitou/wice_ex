@@ -26,11 +26,6 @@
     <%= f.text_field :code %>
   </div>
 
-  <div class="field">
-    <%= f.label :orderer_id %><br>
-    <%= f.number_field :orderer_id %>
-  </div>
-
 <%= form_for @agreement do |f| %>
   <%= f.label :orderer_id %>
   <%= f.collection_select :orderer_id, Orderer.all, :id, :name %>
