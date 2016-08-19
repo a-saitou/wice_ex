@@ -26,10 +26,10 @@
     <%= f.text_field :code %>
   </div>
 
-<%= form_for @agreement do |f| %>
+ <div class="field">
   <%= f.label :orderer_id %>
-  <%= f.collection_select :orderer_id, Orderer.all, :id, :name %>
-<% end %>
+  <%= f.select :orderer_id, @orderers %>
+</div>
 
   <div class="field">
     <%= f.label :constraction_date %><br>
