@@ -12,7 +12,7 @@
     agreement.code
   end
 
-   g.column name: '発注元',assoc: :orderer do |agreement| 
+   g.column name: '発注元', attribute: 'name',assoc: :orderer do |agreement| 
     agreement.orderer.name
   end
  

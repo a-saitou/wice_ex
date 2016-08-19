@@ -1,14 +1,14 @@
 <%= grid(@works_grid) do |g|
 
-  g.column name: '日付',assoc: :calendar do |work| 
+  g.column name: '日付', attribute: 'name',assoc: :calendar do |work| 
     work.calendar.hiduke
   end
 
-  g.column name: '社員',assoc: :staff do |work| 
+  g.column name: '社員', attribute: 'name',assoc: :staff do |work| 
     work.staff.name
   end
 
-  g.column name: '現場',assoc: :agreement do |work| 
+  g.column name: '現場', attribute: 'name',assoc: :agreement do |work| 
     work.agreement.abbreviation
   end
 
