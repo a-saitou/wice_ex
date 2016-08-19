@@ -1,0 +1,39 @@
+<%= grid(@works_grid) do |g|
+
+  g.column name: '日付',assoc: :calendar do |work| 
+    work.calendar.hiduke
+  end
+
+  g.column name: '社員',assoc: :staff do |work| 
+    work.staff.name
+  end
+
+  g.column name: '現場',assoc: :agreement do |work| 
+    work.agreement.abbreviation
+  end
+
+  g.column name:  '開始時間' do |work|
+  	work.start_time
+  end
+
+  g.column name:  '終了時間' do |work|
+  	work.end_time
+  end
+
+  g.column name:  '時間内作業時間' do |work|
+    work.end_time
+  end
+
+  g.column name:  '時間外' do |work|
+    work.end_time
+  end
+
+  g.column name:  '深夜残業' do |work|
+    work.end_time
+  end
+
+  g.column   do |work|
+    link_to('Edit', edit_work_path(work))
+  end
+end 
+%>

@@ -8,6 +8,9 @@
   	orderer.name
   end
 
+  g.column name:  '読み' do |orderer|
+  	orderer.yomi
+  end
   g.column   do |orderer|
     link_to('Edit', edit_orderer_path(orderer))
   end

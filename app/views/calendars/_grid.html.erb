@@ -1,0 +1,33 @@
+<%= grid(@agreements_grid) do |g|
+
+  g.column name:  'ID' do |agreement|
+  	agreement.id
+  end
+
+  g.column name:  '日付' do |agreement|
+  	agreement.hiduke
+  end
+
+  g.column name:  '年' do |agreement|
+    agreement.year
+  end
+
+  g.column name:  '月' do |agreement|
+    agreement.month
+  end
+
+  g.column name:  '日' do |agreement|
+    agreement.day
+  end
+
+  g.column name:  '休日' do |agreement|
+    agreement.holiday
+  end
+
+
+
+  g.column   do |agreement|
+    link_to('Edit', edit_agreement_path(agreement))
+  end
+end 
+%>

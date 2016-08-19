@@ -4,12 +4,28 @@
   	agreement.id
   end
 
-  g.column name:  '名前' do |agreement|
-  	agreement.name
+  g.column abbreviation:  '略称' do |agreement|
+  	agreement.abbreviation
   end
 
-  g.column name: '発注元',assoc: :orderer do |agreement| 
-  	agreement.orderer.name
+  g.column name:  'CODE' do |agreement|
+    agreement.code
+  end
+
+   g.column name: '発注元',assoc: :orderer do |agreement| 
+    agreement.orderer.name
+  end
+ 
+    g.column name:  '名前' do |agreement|
+    agreement.name
+  end
+
+    g.column constraction_date:  '着工日' do |agreement|
+    agreement.constraction_date
+  end
+
+    g.column completion_date:  '竣工日' do |agreement|
+    agreement.completion_date
   end
 
   g.column   do |agreement|
