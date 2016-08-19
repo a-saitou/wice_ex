@@ -3,7 +3,7 @@ class CalendarsController < ApplicationController
 
   # GET /calendars
   def index
-    @cacalendars_grid = initialize_grid(Calendar)
+    @calendars_grid = initialize_grid(Calendar)
   end
 
   # GET /calendars/1
