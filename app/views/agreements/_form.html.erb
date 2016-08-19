@@ -30,7 +30,10 @@
     <%= f.label :orderer_id %><br>
     <%= f.number_field :orderer_id %>
   </div>
-
+<p>
+  <strong>Orderer:</strong>
+  <%= @agreement.orderr.name %>
+</p>
   <div class="field">
     <%= f.label :constraction_date %><br>
     <%= f.text_field :constraction_date %>
