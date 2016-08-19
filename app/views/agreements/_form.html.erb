@@ -29,7 +29,7 @@
  <div class="field">
 <%= form_for @agreement do |f| %>
   <%= f.label :orderer_id %>
- <%= f.select :orderer_id, Orderer.all.map{|o| [o.name, o.id]} %>
+ <%= f.select :orderer_id, @orderers %>
 <% end %>
 </div>
 
