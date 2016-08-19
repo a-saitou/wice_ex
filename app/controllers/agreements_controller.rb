@@ -53,6 +53,9 @@ class AgreementsController < ApplicationController
     def set_agreement
       @agreement = Agreement.find(params[:id])
     end
+    def find_by_orderer_id
+        @orderer = Orderer.find_by_id(params[:orderer_id])
+    end
     # Only allow a trusted parameter "white list" through.
     def agreement_params
       params.require(:agreement).permit(:name,:abbreviation,:code, 

@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   resources :works
   resources :calendars
   resources :staffs
-  resources :agreements
+  resources :agreementsdo
+      get 'find_by_orderer_id'
+   end
   resources :orderers
     Wice.define_routes(self, 'queries')
   # The priority is based upon order of creation: first created -> highest priority.
