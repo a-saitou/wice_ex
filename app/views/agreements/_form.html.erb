@@ -27,16 +27,17 @@
     <%= f.text_field :code %>
   </div>
 
- <div class="field">
-
-  <%= f.label :orderer_id %>
- <%= f.select :orderer_id, @orderers %>
-
-</div>
+   <div class="field">
+     <%= f.label :orderer_id %>
+     <%= f.select :orderer_id, @orderers %>
+   </div>
 
   <div class="field">
     <%= f.label :constraction_date %><br>
-    <%= f.text_field  :constraction_date, class: 'datepicker' %>
+    <div class="controls">
+    <%= f.text_field  :constraction_date, data: { :date_format => 'YYY/MM/DD' },
+              :class => 'form-control datetimepicker', placeholder: 'YYY/MM/DD' %>
+  </div>   
   </div>
 
     <div class="field">

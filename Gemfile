@@ -22,7 +22,9 @@ gem 'jquery-ui-themes'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-
+gem 'jquery-turbolinks'
+gem 'bootstrap3-datetimepicker-rails'
+gem 'momentjs-rails'
 gem 'bootstrap-sass', '3.1.1.1'
 gem 'sass-rails', '>= 3.2'
 gem 'sprockets', '2.11.0' # http://stackoverflow.com/questions/22392862/undefined-method-environment-for-nilnilclass-when-importing-bootstrap

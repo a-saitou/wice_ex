@@ -10,9 +10,9 @@
  *
  *= require_self
  *= require_tree .
- *= require jquery-ui/humanity
 */
 
+@import 'bootstrap-datetimepicker';
 @import "bootstrap";
 @import "wice_grid";
 
