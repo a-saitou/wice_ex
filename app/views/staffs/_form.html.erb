@@ -29,36 +29,21 @@
   </div>
   <div class="field">
     <%= f.label :birthday %><br>
-    <%= f.date_select(
-    :birthday,
-                  use_month_numbers: true,
-                  start_year: 2014,
-                  end_year: (Time.now.year),
-                  default: Date.new(2016,1,1),
-                  date_separator: '/' )
-                  %>
+    <%= f.text_field 
+    :birthday, class: 'datepicker'
+                   %>
   </div>
   <div class="field">
     <%= f.label :hire_date %><br>
-    <%= f.date_select(
-     :hire_date,
-                  use_month_numbers: true,
-                  start_year: 2014,
-                  end_year: (Time.now.year),
-                  default: Date.new(2016,1,1),
-                  date_separator: '/' )
-                  %>
+    <%= f.text_field 
+     :hire_date, class: 'datepicker'
+                   %>
   </div>
   <div class="field">
     <%= f.label :leaving_date %><br>
-    <%= f.date_select(
-    :leaving_date,
-                  use_month_numbers: true,
-                  start_year: 2014,
-                  end_year: (Time.now.year),
-                  default: Date.new(2016,1,1),
-                  date_separator: '/' )
-                  %>
+    <%= f.text_field 
+    :leaving_date, class: 'datepicker'
+                   %>
   </div>
   <div class="actions">
     <%= f.submit %>
