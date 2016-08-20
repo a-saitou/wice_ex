@@ -41,7 +41,7 @@
       </span>
     </div>
   </div>
-<%= time_ago_in_words(@@agreement.constraction_date) %>
+<%= time_ago_in_words(@agreement.constraction_date) %>
     <div class="field">
     <%= f.label :completion_date %><br>
     <%= f.text_field  :completion_date, class: 'datepicker' %>
