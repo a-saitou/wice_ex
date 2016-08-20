@@ -18,8 +18,3 @@
 //= require wice_grid
 //= require turbolinks
 //= require_tree .
-var data = {'data-format': 'yyyy-MM-dd hh:mm' };
-$(function(){
-    $('.datepicker').attr(data);
-    $('.datepicker').datetimepicker();
-});
