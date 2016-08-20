@@ -35,12 +35,24 @@
 
   <div class="field">
     <%= f.label :constraction_date %><br>
-    <%= f.date_select  :constraction_date %>
+    <%= f.date_select(
+                  :constraction_date,
+                  use_month_numbers: true,
+                  start_year: 2014,
+                  end_year: (Time.now.year),
+                  default: Date.new(2016,1,1),
+                  date_separator: '/' %>
   </div>
 
     <div class="field">
     <%= f.label :completion_date %><br>
-    <%= f.date_select  :completion_date %>
+    <%= f.date_select(
+                  :completion_date,
+                  use_month_numbers: true,
+                  start_year: 2014,
+                  end_year: (Time.now.year),
+                  default: Date.new(2016,1,1),
+                  date_separator: '/' %>
   </div>
 
   <div class="actions">
