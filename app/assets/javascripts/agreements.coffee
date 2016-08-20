@@ -2,5 +2,5 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  agreement_start_time = $('#agreement_start_time');
-    $('#agreement_end_time').val(agreement_start_time);
+  agreement_start_time = $('#agreement_start_time')
+    $('#agreement_end_time').val(agreement_start_time)
