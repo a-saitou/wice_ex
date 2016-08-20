@@ -4,3 +4,4 @@
 $ ->
   start_time = $('[name="page[start_time]"]')
   end_time = $('[name="page[end_time]"]')
+  $('#work_note').val('テキスト')
