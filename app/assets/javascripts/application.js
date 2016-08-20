@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require jquery.ui.datepicker
-//= require jquery.ui.datepicker-ja
+//= require moment
+//= require bootstrap-datetimepicker
 //= require wice_grid
 //= require turbolinks
 //= require_tree .
