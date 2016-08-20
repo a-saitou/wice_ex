@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
   	work_start_time = $('#work_start_time')
-    	$('#work_end_time').val(work_start_time)
+    	#$('#work_end_time').val(work_start_time)
