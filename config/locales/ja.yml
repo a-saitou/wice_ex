@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    models:
+      staff: 社員
+      agreement: 契約
+      orderer: 表示順
+      calendar: カレンダー
+
+# モデルの属性名
+ja:
+  activerecord:
+    attributes:
+      stff:
+        name: 名前
