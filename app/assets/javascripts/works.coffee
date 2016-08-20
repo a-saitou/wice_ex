@@ -2,5 +2,4 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  	work_start_time = $('#work_start_time')
     console.log work_start_time
