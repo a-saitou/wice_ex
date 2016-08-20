@@ -10,5 +10,7 @@ ja:
 ja:
   activerecord:
     attributes:
-      stff:
+      staff:
         name: 名前
+      agreement:
+        name: 契約名称
