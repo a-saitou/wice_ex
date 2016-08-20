@@ -14,3 +14,7 @@ ja:
         name: 名前
       agreement:
         name: 契約名称
+        abreviation: 略称
+        orderer: 発注元
+        constraction date: 着工日
+        comletion date: 竣工日
