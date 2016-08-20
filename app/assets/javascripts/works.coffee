@@ -4,7 +4,8 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-  $('#work_work_time').val(['4'])
+  hours = 5.toString()
+  $('#work_work_time').val([hours])
 #  start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 #  diffMs = end_time.getTime() - start_time.getTime()
