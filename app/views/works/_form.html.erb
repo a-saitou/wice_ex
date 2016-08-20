@@ -49,7 +49,6 @@
 <p>
   <strong>Work time:</strong>
   <%= @work.work_time %>
-  <%= f.work_time %>
 </p>
 
   <div class="field">
@@ -58,12 +57,12 @@
   </div>
 <p>
   <strong>Over work time:</strong>
-  <%= @work.over_time %>
+   <%= f.number_field :over_time %>
 </p>
 
 <p>
   <strong>Late night over time:</strong>
-  <%= @work.late_night_over_time %>
+   <%= f.number_field :late_night_time %>
 </p>
   <div class="field">
     <%= f.label :note %><br>
