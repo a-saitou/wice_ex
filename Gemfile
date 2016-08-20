@@ -1,15 +1,15 @@
 # encoding: utf-8
 source 'https://rubygems.org'
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'rails', '4.2.4'
 
-gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
-gem 'faker'
-gem 'coderay'
-gem 'haml'
+#gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
+#gem 'faker'
+#gem 'coderay'
+#gem 'haml'
 gem 'turbolinks'
-gem 'puma'
-gem 'test-unit'
+#gem 'puma'
+#gem 'test-unit'
 
 gem 'wice_grid', '3.6.0'
 # gem 'wice_grid',  path: 'vendor/wice_grid'
@@ -18,7 +18,7 @@ gem 'font-awesome-sass',  '~> 4.3'
 
 gem 'jquery-ui-themes'
 
-gem 'protected_attributes'
+#gem 'protected_attributes'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -39,9 +39,9 @@ gem 'uglifier', '>= 1.0.3'
 #end
 #gem 'mysql2', '~>0.3.13'
 gem 'sqlite3'
-group :development do
-  gem 'quiet_assets'
-end
+#group :development do
+#  gem 'quiet_assets'
+#end
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.13.0'

@@ -1,3 +1,3 @@
 class Orderer < ActiveRecord::Base
-	has_many :agreement
+	has_many :agreements
 end

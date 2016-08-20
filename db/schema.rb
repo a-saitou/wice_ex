@@ -11,19 +11,60 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160816221611) do
+ActiveRecord::Schema.define(version: 20160818135912) do
 
   create_table "agreements", force: :cascade do |t|
     t.string   "name"
+    t.string   "abbreviation"
+    t.integer  "code"
     t.integer  "orderer_id"
+    t.time     "constraction_date"
+    t.time     "completion_date"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  create_table "calendars", force: :cascade do |t|
+    t.date     "hiduke"
+    t.integer  "year"
+    t.integer  "month"
+    t.integer  "day"
+    t.boolean  "holiday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "orderers", force: :cascade do |t|
     t.string   "name"
+    t.string   "yomi"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "staffs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "office"
+    t.integer  "order"
+    t.decimal  "wage"
+    t.date     "birthday"
+    t.date     "hire_date"
+    t.date     "leaving_date"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "works", force: :cascade do |t|
+    t.integer  "calendar_id"
+    t.string   "staff_id"
+    t.integer  "agreement_id"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.integer  "work_time"
+    t.integer  "over_time"
+    t.integer  "late_night_over_time"
+    t.text     "note"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
 end
