@@ -9,4 +9,4 @@ $ ->
   diffMs = end_time.getTime() - start_time.getTime()
   hours = parseInt(diffMs/(60*60*1000), 10)
   hours = 5.toString()
-  $('#work_work_time').val([hours])
+  $('#work_work_time').val(['4'])
