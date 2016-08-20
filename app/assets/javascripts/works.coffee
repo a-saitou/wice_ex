@@ -8,5 +8,5 @@ $ ->
   end_time = new Date($('[name="page[end_time]"]'))
   diffMs = end_time- start_time 
   hours = diffMs/(60*60*1000)
-  hours = 5.toString()
-  $('#work_work_time').val(['4'])
+#  hours = hours.toString()
+  $('#work_work_time').val([hours])
