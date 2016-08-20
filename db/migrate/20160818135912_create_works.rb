@@ -4,8 +4,8 @@ class CreateWorks < ActiveRecord::Migration
       t.integer :calendar_id
       t.string :staff_id
       t.integer :agreement_id
-      t.time :start_time
-      t.time :end_time
+      t.datetime :start_time
+      t.datetime :end_time
       t.integer :work_time
       t.integer :over_time
       t.integer :late_night_over_time
