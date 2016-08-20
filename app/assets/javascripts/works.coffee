@@ -4,10 +4,9 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-  start_time = $('[name="page[start_time]"]')
-  end_time = $('[name="page[end_time]"]')
-  diffMs = end_time.getTime() - start_time.getTime()
-  diffMs =  diffMs* 10 
-  hours = parseInt(diffMs/(60*60*1000), 10)
+  start_time = new Date($('[name="page[start_time]"]'))
+  end_time = new Date($('[name="page[end_time]"]'))
+  diffMs = end_time- start_time 
+  hours = diffMs/(60*60*1000)
   hours = 5.toString()
   $('#work_work_time').val(['4'])
