@@ -25,7 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :start_time %><br>
-    <%= f.time_field :start_time %>
+   <!-- <%= f.time_field :start_time %>-->
+    <div class="controls">
+  <%= f.text_field :start_time, data: { :date_format => 'YYYY/MM/DD hh:mm' }, 
+  :class => 'form-control datetimepicker', placeholder: 'YYYY/MM/DD hh:mm:ss' %>
+</div>
   </div>
   <div class="field">
     <%= f.label :end_time %><br>
