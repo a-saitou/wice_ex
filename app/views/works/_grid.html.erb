@@ -21,15 +21,15 @@
   end
 
   g.column name:  '時間内作業時間' do |work|
-    work.end_time
+    work.work_time
   end
 
   g.column name:  '時間外' do |work|
-    work.end_time
+    work.over_time
   end
 
   g.column name:  '深夜残業' do |work|
-    work.end_time
+    work.late_night_over_time
   end
 
   g.column   do |work|
