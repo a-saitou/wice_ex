@@ -4,7 +4,8 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-   $('#work_work_time').val([5])
+	hours = 5
+	$('#work_work_time').val([hours])
 #   hours = 5.toString()
 #   $('#work_work_time').val([hours])
 #  start_time = new Date($('[name="page[start_time]"]'))
