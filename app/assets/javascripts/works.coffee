@@ -4,7 +4,7 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-  diffMs = 60*60*8*1000
+  diffMs = 60*60*8*1000*10
   hours =  parseInt(diffMs/(60*60*1000), 10)
   $('#work_work_time').val([hours])
 #  start_time = $('[name="page[start_time]"]')
