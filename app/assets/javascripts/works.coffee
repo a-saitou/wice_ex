@@ -4,7 +4,7 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-	start_time = $('#work_start_time').toString()
+	start_time = new String $('#work_start_time')
 	$('#work_note').val(start_time)
 #	d1 = new Date "2013-07-17 11:45:00 +0900"
 #	d2 = new Date "2013-08-05 19:00:00 +0900"
