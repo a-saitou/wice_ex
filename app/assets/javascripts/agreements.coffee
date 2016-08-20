@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
   agreement_start_time = $('#agreement_start_time');
-    $('#agreement_end_time').val(agreement_start_time)
+    $('#agreement_end_time').val(agreement_start_time);
