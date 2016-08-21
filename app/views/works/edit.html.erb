@@ -5,7 +5,7 @@
 <%= link_to 'Show', @work %> |
 <%= link_to 'Back', works_path %>
 <script>
-$('.form-control').change(function(){
+$('#work_start_time').change(function(){
 		var work_end_time = new Date($('#work_end_time').val());
 		var work_start_time = new Date($('#work_start_time').val());
 		var end_time = work_end_time.getTime();

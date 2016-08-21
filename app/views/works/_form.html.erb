@@ -25,23 +25,26 @@
   </div>
 
   <div class="field">
-    <label class="control-label" for="">出社日時</label>
-    <div class='input-group date datetimepicker'>
-      <%= f.text_field :start_time, class: 'form-control' %>
-     <span class="input-group-addon">
-        <span class="fa fa-calendar"></span>
-     </span>
-   </div>
+    <%= f.label :start_time %><br>
+    <%= f.text_field :start_time %>
+ <!--   <label class="control-label" for="">出社日時</label>-->
+  <!--   <div class='input-group date datetimepicker'>-->
+  <!--     <%= f.text_field :start_time, class: 'form-control' %>-->
+  <!--    <span class="input-group-addon">-->
+  <!--       <span class="fa fa-calendar"></span>-->
+ <!--     </span>-->
+ <!--   </div>-->
   </div>
 
   <div class="field">
     <%= f.label :end_time %><br>
-    <div class='input-group date datetimepicker'>
-       <%= f.text_field :end_time, class: 'form-control' %>
-       <span class="input-group-addon">
-         <span class="fa fa-calendar"></span>
-       </span>
-     </div>
+    <%= f.text_field :end_time %>
+ <!--    <div class='input-group date datetimepicker'>-->
+ <!--       <%= f.text_field :end_time, class: 'form-control' %>-->
+ <!--       <span class="input-group-addon">-->
+ <!--         <span class="fa fa-calendar"></span>-->
+ <!--       </span>-->
+  <!--    </div>-->
   </div>
 
   <div class="field">
