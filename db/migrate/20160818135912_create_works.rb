@@ -1,7 +1,7 @@
 class CreateWorks < ActiveRecord::Migration
   def change
     create_table :works do |t|
-      t.integer :calendar_id
+      t.date :calendar_date
       t.string :staff_id
       t.integer :agreement_id
       t.datetime :start_time
