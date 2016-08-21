@@ -7,10 +7,10 @@
 #$	->
 #		end_time = $('#work_end_time').val()	
 #		$('#work_note').val(end_time)
-$ ->
-	$('#work_over_time').mouseover	->
-	end_time = $('#work_end_time').val()
-	$('#work_note').val(end_time)
+#$ ->
+#	$('#work_over_time').mouseover	->
+#	end_time = $('#work_end_time').val()
+#	$('#work_note').val(end_time)
 #  console.log("test")
 
 #  $('input').change ->

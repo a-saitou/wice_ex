@@ -4,3 +4,9 @@
 
 <%= link_to 'Show', @work %> |
 <%= link_to 'Back', works_path %>
+<script>
+$('#work_over_time').mouseover(function(){
+		end_time = $('#work_end_time').val();
+	$('#work_note').val(end_time);
+});
+</script>
