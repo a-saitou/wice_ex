@@ -26,7 +26,7 @@
 
   <div class="field">
     <%= f.label :start_time %><br>
-      <%= f.text_field :start_time , {}, class: 'form-control' %>    
+      <%= f.datetime_select :start_time , {}, class: 'form-control' %>    
 <!--    <div class='input-group date datetimepicker'>-->
 <!--      <%= f.text_field :start_time, class: 'form-control' %>-->
  <!--     <span class="input-group-addon">-->
@@ -37,7 +37,7 @@
 
   <div class="field">
     <%= f.label :end_time %><br>
-    <%= f.text_field :end_time, {}, class: 'form-control'%>
+    <%= f.datetime_select :end_time, {}, class: 'form-control'%>
 <!--    <div class='input-group date datetimepicker'>-->
 <!--       <%= f.text_field :end_time, class: 'form-control' %>-->
 <!--       <span class="input-group-addon">-->
