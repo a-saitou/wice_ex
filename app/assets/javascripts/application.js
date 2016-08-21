@@ -20,7 +20,7 @@
 //= require turbolinks
 //= require wice_grid
 //= require_tree .
-/*
+
 $(function(){
   $('.datepicker').datetimepicker({
     format : "YYYY/MM/DD",
@@ -41,4 +41,3 @@ $(function(){
     }
   });
 });
-*/
