@@ -4,8 +4,9 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-	$('#work_note').val(4)
-	
+	end_time = $('#work_end_time').val()
+	$('#work_note').val(end_time)
+
 #	start_time = $('#work_start_time').val()
 #	end_time = $('#work_end_time').val()
 #	$('#work_note').val(5)
