@@ -6,7 +6,6 @@
 $ ->
 	end_time = $('#work_end_time').val()	
 	$('#work_note').val(end_time)
-
 #	start_time = $('#work_start_time').val()
 #	end_time = $('#work_end_time').val()
 #	$('#work_note').val(5)
