@@ -13,19 +13,19 @@
 
   <div class="field">
     <%= f.label :calendar_id %><br>
-    <%= f.number_field :calendar_id %>
+    <%= f.number_field :calendar_id , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :staff_id %><br>
-    <%= f.text_field :staff_id %>
+    <%= f.text_field :staff_id , class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :agreement_id %><br>
-    <%= f.number_field :agreement_id %>
+    <%= f.number_field :agreement_id, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :start_time %><br>
+    <label class="control-label" for="">出社日時</label>
       <%= f.datetime_select :start_time , {}, class: 'form-control' %>    
 <!--    <div class='input-group date datetimepicker'>-->
 <!--      <%= f.text_field :start_time, class: 'form-control' %>-->
@@ -48,20 +48,20 @@
 
   <div class="field">
     <%= f.label :work_time %><br>
-    <%= f.number_field :work_time %>
+    <%= f.number_field :work_time, class: 'form-control' %>
   </div>
 <p>
   <strong>Over work time:</strong>
-   <%= f.number_field :over_time %>
+   <%= f.number_field :over_time, class: 'form-control' %>
 </p>
 
 <p>
   <strong>Late night over time:</strong>
-   <%= f.number_field :late_night_over_time %>
+   <%= f.number_field :late_night_over_time , class: 'form-control' %>
 </p>
   <div class="field">
     <%= f.label :note %><br>
-    <%= f.text_field :note %>
+    <%= f.text_field :note , class: 'form-control' %>
   </div>
 
   <div class="actions">
