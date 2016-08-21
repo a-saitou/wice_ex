@@ -5,7 +5,7 @@
 <%= link_to 'Show', @work %> |
 <%= link_to 'Back', works_path %>
 <script>
-$('.datepicker').change(function(){
+$('.input-group date datetimepicker').change(function(){
 		var work_end_time = new Date($('#work_end_time').val());
 		var work_start_time = new Date($('#work_start_time').val());
 		var end_time = work_end_time.getTime();
@@ -14,6 +14,7 @@ $('.datepicker').change(function(){
 		var hours = diffMs/(60*60*1000);
 		$('#work_note').val(hours);
 });
+
 $('.datetimepicker').change(function(){
 		var work_end_time = new Date($('#work_end_time').val());
 		var work_start_time = new Date($('#work_start_time').val());
