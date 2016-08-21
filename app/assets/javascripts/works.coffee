@@ -5,7 +5,7 @@
 #  end_time = $('[name="page[end_time]"]')
 $ ->
 	start_time =  $('#work_start_time').val()
-	end_time = n$('[name="page[end_time]"]').val()
+	end_time = $('[name="page[end_time]"]').val()
 	$('#work_note').val(end_time)
 #	d1 = new Date "2013-07-17 11:45:00 +0900"
 #	d2 = new Date "2013-08-05 19:00:00 +0900"
