@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
-$(document).ready ->
+$ ->
 	end_time = $('#work_end_time').val()	
 	$('#work_note').val(end_time)
 $(document).on('page:load', ready)
