@@ -6,9 +6,11 @@
 <%= link_to 'Back', works_path %>
 <script>
 $('#work_end_time').change(function(){
-		end_time = $('#work_end_time').val();
-		start_time = $('#work_start_time').val();
-		diffMs = end_time - start_time;
+		work_end_time = $('#work_end_time').val();
+		work_start_time = $('#work_start_time').val();
+		end_time = work_end_time.getTime();
+		start_time = work_start_time.getTime();
+		diffMs = end_time  - start_time;
 		hours = diffMs/(60*60*1000);
 		$('#work_note').val(hours);
 });
