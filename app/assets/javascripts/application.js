@@ -18,8 +18,8 @@
 //= require moment/ja.js
 //= require bootstrap-datetimepicker
 //= require wice_grid
-//= require turbolinks
 //= require_tree .
+//= require turbolinks
 /*
 $(function(){
   $('.datepicker').datetimepicker({
