@@ -7,6 +7,7 @@
 $(document).on 'page:change', ->
 	end_time = $('#work_end_time').val()	
 	$('#work_note').val(end_time)
+	
 $('#work_end_time').keyup(function() {
 		$('#work_note').text($(this).val());
 	});
