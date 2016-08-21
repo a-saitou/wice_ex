@@ -10,7 +10,7 @@ gem 'rails', '4.2.4'
 gem 'turbolinks'
 #gem 'puma'
 #gem 'test-unit'
-
+gem 'jbuilder', '~> 2.0'
 gem 'wice_grid', '3.6.0'
 # gem 'wice_grid',  path: 'vendor/wice_grid'
 
