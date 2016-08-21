@@ -13,7 +13,7 @@ class WorksController < ApplicationController
 
   # GET /works/new
   def new
-    @work = Work.new
+    @work = Form::Work.new
   end
 
   # GET /works/1/edit
@@ -22,7 +22,7 @@ class WorksController < ApplicationController
 
   # POST /works
   def create
-    @work = Work.new(work_params)
+    @work = Form::Work.new(work_params)
 
     if @work.save
       redirect_to @work, notice: 'Work was successfully created.'
@@ -54,7 +54,8 @@ class WorksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def work_params
-      params.require(:work).permit(:calendar_id, :staff_id, :agreement_id, :start_time, 
-        :end_time, :work_time, :over_time, :late_night_over_time, :note)
+    params
+      .require(:form_eork)
+      .permit(Form::Work::REGISTRABLE_ATTRIBUTES)
     end
 end
