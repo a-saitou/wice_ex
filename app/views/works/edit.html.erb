@@ -9,6 +9,7 @@ $('#work_end_time').change(function(){
 		end_time = $('#work_end_time').val();
 		start_time = $('#work_start_time').val();
 		diffMs = end_time.getTime() - start_time.getTime();
-	$('#work_note').val(diffMs);
+		hours = diffMs/(60*60*1000);
+		$('#work_note').val(hours);
 });
 </script>
