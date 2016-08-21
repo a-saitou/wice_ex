@@ -1,0 +1,5 @@
+current directory: /root/rails/wice_ex/vendor/boundle/ruby/2.2.0/gems/json-1.8.3/ext/json/ext/generator
+/usr/local/src/rbenv/versions/2.2.5/bin/ruby -r ./siteconf20160821-31099-3we8b0.rb extconf.rb
+creating Makefile
+
+Text file busy @ unlink_internal - ./siteconf20160821-31099-3we8b0.rb

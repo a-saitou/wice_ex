@@ -4,10 +4,16 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 #$(document).on 'page:change', ->
-$	->
-		end_time = $('#work_end_time').val()	
-		$('#work_note').val(end_time)
+#$	->
+#		end_time = $('#work_end_time').val()	
+#		$('#work_note').val(end_time)
+$ ->
+	$('#work_end_time').mouseover	->
+	$('#work_note').val(end_time)
+#  console.log("test")
 
+#  $('input').change ->
+#    console.log("change")
 #$('#work_end_time').on "change", ->
 #	end_time = $('#work_end_time').val()	
 #	$('#work_note').val(end_time)
@@ -16,8 +22,8 @@ $	->
 #		$('#work_note').text($(this).val());
 #	});
 
-$(document).ready(ready)
-$(document).on('page:load', ready)
+#$(document).ready(ready)
+#$(document).on('page:load', ready)
 #	end_time = $('#work_end_time').val()	
 #	$('#work_note').val(end_time)
 #	start_time = $('#work_start_time').val()
