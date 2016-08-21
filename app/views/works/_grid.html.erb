@@ -1,6 +1,6 @@
 <%= grid(@works_grid) do |g|
 
-  g.column name: '日付', attribute: 'calendar_date',assoc: :calendar do |work| 
+  g.column name: '日付' do |work| 
     work.calendar_date
   end
 
