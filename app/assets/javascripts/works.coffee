@@ -6,9 +6,7 @@
 $ ->
 	d1 = $('#work_start_time').val()
 	d2 = $('#work_end_time').val()
-	diffMs = d2.getTime() - d1.getTime()
-	hours = diffMs/(60*60*1000)
-	$('#work_note').val(hours)
+	$('#work_note').val(d2)
 #	end_time = $('#work_end_time').val()
 #
 #	d1 = new Date "2013-07-17 11:45:00 +0900"
