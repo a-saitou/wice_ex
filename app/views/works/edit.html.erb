@@ -6,12 +6,12 @@
 <%= link_to 'Back', works_path %>
 <script>
 $('#work_end_time').change(function(){
-		work_end_time = $('#work_end_time').val();
-		work_start_time = $('#work_start_time').val();
-		end_time = work_end_time.getTime();
-		start_time = work_start_time.getTime();
-		diffMs = end_time  - start_time;
-		hours = diffMs/(60*60*1000);
+		var work_end_time = new Date($('#work_end_time').val());
+		var work_start_time = new Date($('#work_start_time').val());
+		var end_time = work_end_time.getTime();
+		var start_time = work_start_time.getTime();
+		var diffMs = end_time  - start_time;
+		var hours = diffMs/(60*60*1000);
 		$('#work_note').val(hours);
 });
 </script>
