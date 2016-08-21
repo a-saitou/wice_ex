@@ -6,7 +6,7 @@
 $(document).ready ->
 	end_time = $('#work_end_time').val()	
 	$('#work_note').val(end_time)
-
+$(document).on('page:load', ready)
 #	end_time = $('#work_end_time').val()	
 #	$('#work_note').val(end_time)
 #	start_time = $('#work_start_time').val()
