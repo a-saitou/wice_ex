@@ -5,7 +5,7 @@
 #  end_time = $('[name="page[end_time]"]')
 #$(document).on 'page:change', ->
 $(document).on 'page:change', ->
-	$('#work_work_time').on "change", ->
+	$('#work_work_time').on 'change',  ->
 		end_time = $('#work_end_time').val()	
 		$('#work_note').val(end_time)
 
