@@ -8,12 +8,16 @@ $	->
 	end_time = $('#work_end_time').val()	
 	$('#work_note').val(end_time)
 
+$('#work_end_time').on "change", ->
+	end_time = $('#work_end_time').val()	
+	$('#work_note').val(end_time)
+
 #$('#work_end_time').keyup(function() {
 #		$('#work_note').text($(this).val());
 #	});
 
-#$(document).ready(ready)
-#$(document).on('page:load', ready)
+$(document).ready(ready)
+$(document).on('page:load', ready)
 #	end_time = $('#work_end_time').val()	
 #	$('#work_note').val(end_time)
 #	start_time = $('#work_start_time').val()
