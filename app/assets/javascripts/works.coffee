@@ -4,9 +4,11 @@
 # start_time = $('[name="page[start_time]"]')
 #  end_time = $('[name="page[end_time]"]')
 $ ->
-	start_time = $('#work_start_time').val()
-	end_time = $('#work_end_time').val()
-	$('#work_note').val(end_time)
+	d1 = $('#work_start_time').val()
+	d2 = $('#work_end_time').val()
+	diffMs = d2.getTime() - d1.getTime()
+	hours = diffMs/(60*60*1000)
+	$('#work_note').val(hours)
 #	end_time = $('#work_end_time').val()
 #
 #	d1 = new Date "2013-07-17 11:45:00 +0900"
