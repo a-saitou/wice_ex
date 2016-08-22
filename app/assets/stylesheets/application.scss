@@ -12,6 +12,7 @@
  *= require_tree .
  *= require bootstrap-datetimepicker
 */
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 @import 'bootstrap-datetimepicker';
 @import "wice_grid";
