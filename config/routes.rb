@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'info/index'
-
+  root => to 'info#index'
   resources :works
   resources :calendars
   resources :staffs
