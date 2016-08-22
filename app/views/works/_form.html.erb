@@ -50,7 +50,11 @@ $(function() {
  <!--       </span>-->
   <!--    </div>-->
   </div>
-
+<script>
+$(function() {
+  $('#work_end_time').css('width', '200px');
+});
+</script>
   <div class="field">
     <%= f.label :work_time %><br>
     <%= f.number_field :work_time %>
