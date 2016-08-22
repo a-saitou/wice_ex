@@ -54,14 +54,14 @@ ActiveRecord::Schema.define(version: 20160818135912) do
   end
 
   create_table "works", force: :cascade do |t|
-    t.integer  "calendar_id"
+    t.date     "calendar_date"
     t.string   "staff_id"
     t.integer  "agreement_id"
-    t.time     "start_time"
-    t.time     "end_time"
-    t.integer  "work_time"
-    t.integer  "over_time"
-    t.integer  "late_night_over_time"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.decimal  "work_time"
+    t.decimal  "over_time"
+    t.decimal  "late_night_over_time"
     t.text     "note"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
