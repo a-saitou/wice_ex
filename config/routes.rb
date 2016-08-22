@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'info/index'
+
   resources :works
   resources :calendars
   resources :staffs
