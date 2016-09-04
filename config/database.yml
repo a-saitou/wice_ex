@@ -12,9 +12,8 @@ development:
   username: root　
   password: YGPft21C　
   socket: /var/lib/mysql/mysql.sock　
-  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com　
+  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com:3306
   database: densetsu　
-  port: 3306
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
