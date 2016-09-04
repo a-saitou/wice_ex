@@ -1,8 +1,6 @@
 <%= grid(@constractions_grid,  hide_submit_button: true) do |g|
 
-  g.column name:  'ID' do |constraction|
-  	constraction.id
-  end
+  g.column name:  'ID' , attribute: 'id'
 
   g.column name:  '略称' do |constraction|
   	constraction.abbreviation
@@ -16,7 +14,7 @@
     constraction.orderer.name
   end
  
-    g.column name:  '名前' , attribute: 'name', auto_reload:  true do |constraction|
+    g.column name:  '名前' , attribute: 'name', auto_reload:  true  do |constraction|
     constraction.name
   end
     g.column name:  '読み' , attribute: 'kana', auto_reload:  true , negation: true
