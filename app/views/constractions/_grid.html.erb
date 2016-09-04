@@ -1,6 +1,7 @@
 <%= grid(@constractions_grid,  hide_submit_button: true) do |g|
 
-  g.column name:  'ID' , attribute: 'id'
+  g.column name:  'ID' , attribute: 'id', filter_type: :range
+
 
   g.column name:  '略称' do |constraction|
   	constraction.abbreviation
