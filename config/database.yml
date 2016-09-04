@@ -10,16 +10,15 @@ default: &default
   timeout: 5000
 
 development:
-development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: densetsu
   pool: 5
-  username: root
-  password: YGPft21c
-  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com
-  port: 3306
+  username: root　#自分の環境に合わせて変更
+  password: YGPft21C　#自分の環境に合わせて変更
+  socket: /var/lib/mysql/mysql.sock　#自分の環境に合わせて変更
+  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com　#自分の環境に合わせて変更
+  database: densetsu　#自分の環境に合わせて変更
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
