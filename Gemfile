@@ -11,6 +11,7 @@ gem 'turbolinks'
 #gem 'puma'
 #gem 'test-unit'
 gem 'jbuilder', '~> 2.0'
+
 gem 'wice_grid', '3.6.0'
 # gem 'wice_grid',  path: 'vendor/wice_grid'
 
@@ -23,8 +24,11 @@ gem 'jquery-ui-themes'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-turbolinks'
+
 gem 'autoprefixer-rails'
+
 gem 'bootstrap3-datetimepicker-rails'
+
 gem 'momentjs-rails'
 gem 'bootstrap-sass', '3.1.1.1'
 gem 'sass-rails', '>= 3.2'

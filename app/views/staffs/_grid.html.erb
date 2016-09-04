@@ -1,7 +1,7 @@
 <%= grid(@staffs_grid) do |g|
 
-  g.column name:  'ID' do |staff|
-  	staff.id
+  g.column name:  'ID'  do |staff|
+    staff.id
   end
 
   g.column name:  '名前' do |staff|
@@ -37,5 +37,6 @@
   g.column   do |staff|
     link_to('Edit', edit_staff_path(staff))
   end
+
 end 
 %>

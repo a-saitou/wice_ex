@@ -53,6 +53,6 @@ class OrderersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def orderer_params
-      params.require(:orderer).permit(:name)
+      params.require(:orderer).permit(:name,:kana)
     end
 end

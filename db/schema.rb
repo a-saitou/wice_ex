@@ -11,18 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160818135912) do
-
-  create_table "agreements", force: :cascade do |t|
-    t.string   "name"
-    t.string   "abbreviation"
-    t.integer  "code"
-    t.integer  "orderer_id"
-    t.time     "constraction_date"
-    t.time     "completion_date"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-  end
+ActiveRecord::Schema.define(version: 20160831125127) do
 
   create_table "calendars", force: :cascade do |t|
     t.date     "hiduke"
@@ -34,9 +23,21 @@ ActiveRecord::Schema.define(version: 20160818135912) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "constractions", force: :cascade do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.string   "kana"
+    t.integer  "code"
+    t.integer  "orderer_id"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
   create_table "orderers", force: :cascade do |t|
     t.string   "name"
-    t.string   "yomi"
+    t.string   "kana"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -54,17 +55,16 @@ ActiveRecord::Schema.define(version: 20160818135912) do
   end
 
   create_table "works", force: :cascade do |t|
-    t.date     "calendar_date"
-    t.string   "staff_id"
-    t.integer  "agreement_id"
+    t.date     "hiduke"
+    t.integer  "staff_id"
+    t.integer  "constraction_id"
     t.datetime "start_time"
     t.datetime "end_time"
-    t.decimal  "work_time"
-    t.decimal  "over_time"
-    t.decimal  "late_night_over_time"
-    t.text     "note"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.float    "work_time"
+    t.float    "over_time"
+    t.float    "night_time"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :works
   resources :calendars
   resources :staffs
-  resources :agreements do
+  resources :constractions do
       get 'find_by_orderer_id'
    end
   resources :orderers
