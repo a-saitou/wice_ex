@@ -18,8 +18,9 @@ development:
   pool: 5
   username: root
   password: YGPft21c
-  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com:3306
-  
+  host: densetsu.ce5plgxi44fk.us-west-2.rds.amazonaws.com
+  port 3306
+
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
