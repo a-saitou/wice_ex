@@ -15,10 +15,9 @@
     constraction.orderer.name
   end
  
-    g.column name:  '名前' , attribute: 'name', auto_reload:  true  do |constraction|
-    constraction.name
-  end
-    g.column name:  '読み' , attribute: 'kana', auto_reload:  true , negation: true
+    g.column name:  '名前' , attribute: 'name', auto_reload:  true 
+
+    g.column name:  '読み' , attribute: 'kana', auto_reload:  true 
 
     g.column name:  '着工日' do |constraction|
     constraction.start_date
