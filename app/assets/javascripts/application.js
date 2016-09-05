@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require turbolinks
 //= require wice_grid
+//= require turbolinks
 //= require_tree .
 /*
 $(function(){
